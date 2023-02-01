@@ -1,55 +1,26 @@
 package com.driver;
 
 public class Book {
-    
-     private int id;
+
+     private int id = 0;
 
      private String name;
 
      private String genre;
-     
+
      private String author;
 
      public Book(){
 
      }
 
-     public Book(int id, String name, String genre, String author) {
-          this.id = id;
+     public Book(String name, String genre, String author) {
+          this.id+=1;
           this.name = name;
           this.genre = genre;
           this.author = author;
      }
 
-     public Book(int id) {
-          this.id = id;
-     }
-
-     public Book(String name) {
-          this.name = name;
-     }
-
-     public Book(int id, String name) {
-          this.id = id;
-          this.name = name;
-     }
-     public Book(String name,String genre, String author ){
-          this.name = name;
-          this.genre = genre;
-          this.author = author;
-     }
-
-
-     public Book(Book book) {
-     }
-
-     public int getId() {
-          return id;
-     }
-
-     public void setId(int id) {
-          this.id = id;
-     }
 
      public String getName() {
           return name;
@@ -73,5 +44,13 @@ public class Book {
 
      public void setAuthor(String author) {
           this.author = author;
+     }
+
+     public int getId() {
+          return id;
+     }
+
+     public void setId(int id) {
+          this.id = id;
      }
 }

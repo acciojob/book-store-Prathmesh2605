@@ -21,6 +21,20 @@ public class Book {
           this.author = author;
      }
 
+     public Book(int id) {
+          this.id = id;
+     }
+
+     public Book(String name) {
+          this.name = name;
+     }
+
+     public Book(int id, String name) {
+          this.id = id;
+          this.name = name;
+     }
+
+
      public Book(Book book) {
      }
 

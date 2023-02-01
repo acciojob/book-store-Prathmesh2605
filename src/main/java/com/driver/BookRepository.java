@@ -14,9 +14,9 @@ public class BookRepository {
 
     public Book save(Book book){
 
-        Book book1 = new Book(book);
-        bookMap.put(book.getName(),book1);
-        return book1;
+        //Book book1 = new Book(book);
+        bookMap.put(book.getName(),book);
+        return book;
     }
 
     public Book findBookById(int id){
